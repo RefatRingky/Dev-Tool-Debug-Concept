@@ -183,5 +183,36 @@
   .artist-card:hover .album-button i {
     display: none;
   }
+  /* album  */
+
+.albums-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 0;
+  }
+  
+  .album {
+    background-color: var(--purple);
+    height: 100%;
+    width: 230px;
+    justify-self: center;
+  }
+  
+  .album-image-container {
+    height: 200px;
+    width: 230px;
+    overflow: hidden;
+  }
+  
+  .album-image-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .album-name {
+    text-align: center;
+    padding: 10px;
+    color: var(--dark-gray);
+  }
   
   
