@@ -1,0 +1,64 @@
+:root {
+    --purple: #9c75f4;
+    --dark-gray: #141414;
+    --light-gray: #a5a6a6;
+    --motion: all ease-in-out 300ms;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Fira Sans", sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  
+  header h1 {
+    font-family: "Libre Baskerville", serif;
+    color: var(--purple);
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input {
+    height: 40px;
+    width: 300px;
+    border-radius: 100px;
+    padding: 0 15px;
+    border: 1px solid var(--light-gray);
+    font-size: 1rem;
+  }
+  
+  .search-container button {
+    height: 40px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 100px;
+    margin-left: 15px;
+    background-color: var(--purple);
+  
+    color: white;
+    font-weight: 600;
+    line-height: 0;
+    cursor: pointer;
+    transition: var(--motion);
+  }
+  
+  .search-container button:hover {
+    background: #824ff8;
+    color: var(--dark-gray);
+  }
+  
