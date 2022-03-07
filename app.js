@@ -12,6 +12,14 @@ const handleSearch = () =>{
   .then((res)=> res.json())
   .then((data) => showArtist(data));
 };
-const showArtist = (data) =>{
-  console.log(data);
+const showArtist = ({artists}) =>{
+  const artistContainer = elementById("artists")
+  artists.forEach(artist => {
+    const div = document.createElement('div');
+    div.innerHTML =  `
+        <p>${artist.strArtist}</p>
+    `
+    artistContainer.appendChild(div);
+  });
+  
 };
